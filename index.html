@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>SaaSLandingPage</title>
+    <link rel="stylesheet" href="saas.css">
+</head>
+<body>
+    <div class="container">
+  <div class="firstdiv">
+<div class="navbar">
+<div id="logo"><img src="pictures/logo.png" alt="">
+</div>
+<div class="menu">
+    <a href="">About UIFry?</a>
+    <a href="">Features</a>
+    <a href="">Resources</a>
+    <a href="">Company</a>
+</div>
+<div class="btnandsearch">
+    <button id="getdemobtn">Get Demo</button>
+    <button id="contactsalesbtn">Contact Sales</button>
+    <a href=""><img src="pictures/search - account.png" alt=""></a>
+</div>
+</div>
+<div class="firstdivcontent">
+    <div class="firstdivleft">
+        <img id="ratinglogos" src="pictures/rating - logos.png" alt="">
+    <p id="firstdivheading">Seamless solution <br>
+        with our magic!</p>
+        <p id="firstdivpara">UIFry is the project management platform that aims for teams to <br> achieve 
+              an efficient dream management</p>
+              <img id="captionimg" src="pictures/caption.png" alt="">
+              <button id="demobtn">Get a Free Demo</button>
+              <img id="logos" src="pictures/logos.png" alt="">
+    </div>
+    <div class="firstdivright">
+   <img id="toggle" src="pictures/toggle.png" alt="">
+   <img src="pictures/card.png" alt="">
+   <br><br>
+ 
+    <img src="pictures/vector.png" alt="">
+   <img id="settings" src="pictures/settings.png" alt="">
+   <br>
+   <img id="dotsimg" src="pictures/dotsimg.png" alt="">
+   <img id="c" src="pictures/c.png" alt="">
+   <img id="ratingsimg" src="pictures/ratingimg.png" alt="">
+   <br>
+   <img id="imgsfirstdiv" src="pictures/imgsfirstdiv.png" alt="">
+   <div class="balancegain">
+    <p id="balance">Balance</p>
+    <p id="amount">$101,291.12</p>
+    <p id="gainloss">GAINS/LOSSES</p>
+    <p id="amount1">$45264800</p>
+    <p id="quicktransfer">QUICK TRANSFER</p>
+    <img id="groupimg" src="pictures/Groupimg.png" alt="">
+    <p id="cardnum">Card Number</p>
+    <input id="cnumtxtbox" type="number" placeholder="XXXX XXXX XXXX XXXX">
+    <p id="expiry">Expiry Date</p>
+    <p id="cvv">CVV</p>
+     <input id="txtboxexpiry" type="text" placeholder="--/--">
+    
+    <input id="cvvtxtbox" type="text" placeholder="----">
+    <button id="sendmoneybtn">Send Money</button>
+    <button id="savedraftbtn">Save Draft</button>
+   </div>
+    
+    </div>
+
+</div>
+
+</div>
+<div class="seconddiv">
+<p id="secondheading">Choose from over 10+ <br> cutting—edge products</p>
+<button id="btnseeall">See all products</button>
+<img id="imgsseconddiv" src="pictures/SaaS Landing Page imgs.png" alt="">
+<div class="backgroundarrows">
+    <img id="arrows" src="pictures/arrow.png" alt="">
+<p id="headingseconddiv">Here's what our customer <br>
+    has to says</p>
+    <button id="customersstories">Read Customers Stories</button>
+    <img id="description" src="pictures/description.png" alt="">
+        <!-- <img id="cardtestimonial" src="pictures/testimonial.png" alt=""> -->
+    <div id="cardtestimonial">
+        <!-- <p id="cardheading">Amazing tool! Saved me months</p>
+        <p id="cardpara">This is a placeholder for your testimonials and what your client has to <br>
+             say, put them here and make sure its 100% true and meaningful.</p>
+             <img src="pictures/profile.png" alt=""> -->
+    </div>
+    
+
+</div>
+</div>
+<div class="thirddiv">
+ <div class="row">
+    <img src="pictures/icons.png" alt="">
+    <img id="centertxt" src="pictures/Frame 53.png" alt="">
+    <img id="toggle1" src="pictures/toggle.png" alt="">
+    
+ </div>
+ <div class="imgsthirddiv">
+<img id="thirddivimg" src="pictures/apps (auto change transition).png" alt="">
+<img id="thirddivimg1" src="pictures/apps (auto change transition) (1).png" alt="">
+<img id="headingdescriptionimg" src="pictures/heading - description.png" alt="">
+<button id="btndemo">Get a Free Demo</button>
+<img id="caption1" src="pictures/caption1.png" alt="">
+<img id="cc" src="pictures/cc.png" alt="">
+<img id="desktop1" src="pictures/Desktop - 1.png" alt="">
+ </div>
+    </div>
+    </div>
+    </div>
+   <script>
+let headings = [
+    'Amazing tool! Saved me months',
+    'Amazing tool! Saved me months 2',
+    'Amazing tool! Saved me months 3',
+    'Amazing tool! Saved me months 4'];
+
+let paragraph = [
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful.',
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful. 2',
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful. 3',
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful. 4'];
+
+let main = document.getElementById("cardtestimonial");
+let col = "";
+for (let i = 0; i < 4; i++) {
+    col += `<div class="col">
+    <h3>${headings[i]}</h3>
+    <p>${paragraph[i]}</p>
+    <div class="info">
+        <img src="images/avatar.png" alt="">
+        <div class="info-text">
+            <p>John Master</p>
+            <p>Director,  UiFry.com</p>
+        </div>
+    </div>
+</div>`
+}
+main.innerHTML = col;
+   </script>
+
+   <!-- <script>
+    let main=document.getElementById("cardtestimonial")
+    for(let i=0;i<4;i++){
+       document.getElementById("cardheading")
+       document.getElementById("cardpara")
+    }
+   </script> -->
+</body>
+</html>
